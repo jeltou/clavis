@@ -1,5 +1,3 @@
-import 'package:clavis/blocs/navigation/navigation_bloc.dart';
-import 'package:clavis/blocs/navigation/navigation_nuntius.dart';
 import 'package:clavis/clavis.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -10,6 +8,7 @@ void main() async {
 
   // Example: Accessing a nested value in config/app.yaml
   final apiUrl = await config.getValueByPath('app/api/url');
+  dPrint(apiUrl);
 
   runApp(MyApp());
 }

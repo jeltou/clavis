@@ -1,4 +1,4 @@
-library debug;
+library;
 
 import 'package:flutter/foundation.dart';
 import 'dart:developer';

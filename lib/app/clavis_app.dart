@@ -1,6 +1,5 @@
 import 'package:clavis/cbloc/cbloc.dart';
 import 'package:clavis/pages/home.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

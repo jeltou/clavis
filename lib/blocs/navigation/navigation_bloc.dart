@@ -1,4 +1,4 @@
-import 'package:bloc/bloc.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:clavis/blocs/navigation/navigation_nuntius.dart';
 import 'package:meta/meta.dart';
 import '../../cbloc/cbloc.dart';
