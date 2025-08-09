@@ -50,7 +50,6 @@ class _MaterialForesAppState extends State<MaterialForesApp> {
             BlocProvider(create: (context) => navigationBloc),
             BlocProvider(create: (context) => notificationBloc),
             BlocProvider(create: (context) => sessionBloc),
-            ...?widget.blocs?.map((b) => BlocProvider(create: (context) => b)),
           ],
           child: MaterialApp(
             debugShowCheckedModeBanner: false,
