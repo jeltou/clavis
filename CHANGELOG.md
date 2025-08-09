@@ -6,3 +6,5 @@ Rename clavis -> fores
 Fix naming
 ## 1.0.2
 Fix naming
+## 1.0.2
+Fix notification bloc init error

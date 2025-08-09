@@ -45,7 +45,7 @@ class _MaterialForesAppState extends State<MaterialForesApp> {
     widget.routes.forEach((r, w) => defaultRoutes[r] = w);
     appRouter = AppRouter(defaultRoutes);
     navigationBloc = widget.navigationBloc ?? NavigationBloc();
-    navigationBloc = widget.notificationBloc ?? NotificationBloc();
+    notificationBloc = widget.notificationBloc ?? NotificationBloc();
   }
 
   @override
