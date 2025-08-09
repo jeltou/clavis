@@ -14,20 +14,12 @@ class MaterialForesApp extends StatefulWidget {
   final String? title;
   final Map<String, Widget> routes;
   final Size designSize;
-  final CBloc? navigationBloc;
-  final CBloc? notificationBloc;
-  final CBloc? sessionBloc;
-  final List<CBloc>? blocs;
 
   const MaterialForesApp({
     super.key,
     required this.routes,
     required this.designSize,
     this.title,
-    this.sessionBloc,
-    this.navigationBloc,
-    this.notificationBloc,
-    this.blocs,
   });
 
   @override
@@ -37,18 +29,14 @@ class MaterialForesApp extends StatefulWidget {
 class _MaterialForesAppState extends State<MaterialForesApp> {
   Map<String, Widget> defaultRoutes = {"@ROOT@": Root(), "/": Home()};
   late final AppRouter appRouter;
-  late final CBloc navigationBloc;
-  late final CBloc notificationBloc;
-  late final CBloc sessionBloc;
+  NotificationBloc notificationBloc = NotificationBloc();
+  NavigationBloc navigationBloc = NavigationBloc();
+  SessionBloc sessionBloc = SessionBloc();
 
   @override
   void initState() {
     super.initState();
     widget.routes.forEach((r, w) => defaultRoutes[r] = w);
-    appRouter = AppRouter(defaultRoutes);
-    navigationBloc = widget.navigationBloc ?? NavigationBloc();
-    notificationBloc = widget.notificationBloc ?? NotificationBloc();
-    sessionBloc = widget.sessionBloc ?? SessionBloc();
   }
 
   @override
