@@ -6,5 +6,7 @@ Rename clavis -> fores
 Fix naming
 ## 1.0.2
 Fix naming
-## 1.0.2
+## 1.0.3
 Fix notification bloc init error
+## 1.0.4
+init SessionBloc

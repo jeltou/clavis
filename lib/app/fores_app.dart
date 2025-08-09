@@ -1,3 +1,4 @@
+import 'package:fores/blocs/session/session_bloc.dart';
 import 'package:fores/cbloc/cbloc.dart';
 import 'package:fores/pages/home.dart';
 import 'package:flutter/material.dart';
@@ -38,6 +39,7 @@ class _MaterialForesAppState extends State<MaterialForesApp> {
   late final AppRouter appRouter;
   late final CBloc navigationBloc;
   late final CBloc notificationBloc;
+  late final CBloc sessionBloc;
 
   @override
   void initState() {
@@ -46,6 +48,7 @@ class _MaterialForesAppState extends State<MaterialForesApp> {
     appRouter = AppRouter(defaultRoutes);
     navigationBloc = widget.navigationBloc ?? NavigationBloc();
     notificationBloc = widget.notificationBloc ?? NotificationBloc();
+    sessionBloc = widget.sessionBloc ?? SessionBloc();
   }
 
   @override
@@ -58,6 +61,7 @@ class _MaterialForesAppState extends State<MaterialForesApp> {
           providers: [
             BlocProvider(create: (context) => navigationBloc),
             BlocProvider(create: (context) => notificationBloc),
+            BlocProvider(create: (context) => sessionBloc),
             ...?widget.blocs?.map((b) => BlocProvider(create: (context) => b)),
           ],
           child: MaterialApp(
