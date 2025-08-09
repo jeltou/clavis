@@ -1,6 +1,6 @@
 # Fores 🔑
 
-**Fores**  is a modular architecture library for Flutter that elegantly combines communication, routing, and configuration in larger projects.
+**Fores** is a modular architecture library for Flutter that elegantly combines communication, routing, and configuration in larger projects.
 
 ## ✨ Features
 
