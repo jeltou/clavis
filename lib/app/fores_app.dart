@@ -37,6 +37,7 @@ class _MaterialForesAppState extends State<MaterialForesApp> {
   void initState() {
     super.initState();
     widget.routes.forEach((r, w) => defaultRoutes[r] = w);
+    appRouter = AppRouter(defaultRoutes);
   }
 
   @override
