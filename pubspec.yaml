@@ -1,6 +1,6 @@
 name: fores
 description: "fores is a modular architecture library for Flutter that combines communication, routing, and configuration in larger projects."
-version: 1.0.4
+version: 1.0.5
 homepage: https://github.com/jeltou/fores
 
 environment:
