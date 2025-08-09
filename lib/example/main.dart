@@ -25,7 +25,7 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialforesApp(routes: routes, designSize: const Size(360, 690));
+    return MaterialForesApp(routes: routes, designSize: const Size(360, 690));
   }
 }
 

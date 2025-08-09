@@ -9,7 +9,7 @@ import '../blocs/notification/notification_bloc.dart';
 import '../pages/root.dart';
 import '../router/router.dart';
 
-class MaterialforesApp extends StatefulWidget {
+class MaterialForesApp extends StatefulWidget {
   final String? title;
   final Map<String, Widget> routes;
   final Size designSize;
@@ -18,7 +18,7 @@ class MaterialforesApp extends StatefulWidget {
   final CBloc? sessionBloc;
   final List<CBloc>? blocs;
 
-  const MaterialforesApp({
+  const MaterialForesApp({
     super.key,
     required this.routes,
     required this.designSize,
@@ -30,10 +30,10 @@ class MaterialforesApp extends StatefulWidget {
   });
 
   @override
-  State<MaterialforesApp> createState() => _MaterialforesAppState();
+  State<MaterialForesApp> createState() => _MaterialForesAppState();
 }
 
-class _MaterialforesAppState extends State<MaterialforesApp> {
+class _MaterialForesAppState extends State<MaterialForesApp> {
   Map<String, Widget> defaultRoutes = {"@ROOT@": Root(), "/": Home()};
   late final AppRouter appRouter;
   late final CBloc navigationBloc;
