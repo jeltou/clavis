@@ -9,7 +9,7 @@ part 'notification_event.dart';
 part 'notification_state.dart';
 
 class NotificationBloc extends CBloc<NotificationEvent, NotificationState> {
-  NotificationBloc() : super(NotificationInitial(), subscribedTopics: []) {
+  NotificationBloc() : super(NotificationInitial(), subscribedTopics: [notificationTopic]) {
     on<NotificationEvent>((event, emit) {});
     on<ShowSnackBar>(_showSnackBar);
     on<ShowErrorSnackBar>(_showErrorSnackBar);
