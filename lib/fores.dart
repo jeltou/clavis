@@ -1,6 +1,6 @@
 export 'debug/debug.dart';
 export 'cbloc/cbloc.dart';
-export 'app/clavis_app.dart';
+export 'app/fores_app.dart';
 export 'router/router.dart';
 export 'conexus/conexus.dart';
 export 'config/config.dart';

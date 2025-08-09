@@ -1,4 +1,4 @@
-import 'package:clavis/clavis.dart';
+import 'package:fores/fores.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -25,7 +25,7 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialClavisApp(routes: routes, designSize: const Size(360, 690));
+    return MaterialforesApp(routes: routes, designSize: const Size(360, 690));
   }
 }
 

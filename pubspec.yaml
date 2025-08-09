@@ -1,5 +1,5 @@
-name: clavis
-description: "Clavis (Latin for key) is a modular architecture library for Flutter that combines communication, routing, and configuration in larger projects."
+name: fores
+description: "fores (Latin for key) is a modular architecture library for Flutter that combines communication, routing, and configuration in larger projects."
 version: 1.0.0
 homepage: https://github.com/jeltou/fores
 

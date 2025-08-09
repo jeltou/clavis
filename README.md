@@ -1,6 +1,6 @@
-# Clavis 🔑
+# Fores 🔑
 
-**Clavis** (Latin for *key*) is a modular architecture library for Flutter that elegantly combines communication, routing, and configuration in larger projects.
+**Fores**  is a modular architecture library for Flutter that elegantly combines communication, routing, and configuration in larger projects.
 
 ## ✨ Features
 
@@ -23,11 +23,11 @@
 
 ## 📦 Installation
 
-Add **Clavis** to your `pubspec.yaml`:
+Add **fores** to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  clavis: ^1.0.0
+  fores: ^1.0.0
 ```
 
 Then run:
@@ -42,7 +42,7 @@ flutter pub get
 
 
 ```dart
-import 'package:clavis/clavis.dart';
+import 'package:fores/fores.dart';
 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
@@ -56,7 +56,7 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialClavisApp(routes: routes, designSize: const Size(360, 690));
+    return MaterialforesApp(routes: routes, designSize: const Size(360, 690));
   }
 }
 ```
@@ -134,7 +134,7 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialClavisApp(routes: routes, designSize: const Size(360, 690));
+    return MaterialforesApp(routes: routes, designSize: const Size(360, 690));
   }
 }
 
@@ -157,7 +157,7 @@ Navigator.pushNamed(context, '/second')
 
 ## 📚 Used Libraries
 
-Clavis uses the following libraries and must mention them in documentation:
+fores uses the following libraries and must mention them in documentation:
 
 - [flutter_bloc: ^9.1.0](https://pub.dev/packages/flutter_bloc) – State Management
 - [flutter_screenutil: ^5.9.3](https://pub.dev/packages/flutter_screenutil) – Responsive Layout

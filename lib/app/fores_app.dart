@@ -1,5 +1,5 @@
-import 'package:clavis/cbloc/cbloc.dart';
-import 'package:clavis/pages/home.dart';
+import 'package:fores/cbloc/cbloc.dart';
+import 'package:fores/pages/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -9,7 +9,7 @@ import '../blocs/notification/notification_bloc.dart';
 import '../pages/root.dart';
 import '../router/router.dart';
 
-class MaterialClavisApp extends StatefulWidget {
+class MaterialforesApp extends StatefulWidget {
   final String? title;
   final Map<String, Widget> routes;
   final Size designSize;
@@ -18,7 +18,7 @@ class MaterialClavisApp extends StatefulWidget {
   final CBloc? sessionBloc;
   final List<CBloc>? blocs;
 
-  const MaterialClavisApp({
+  const MaterialforesApp({
     super.key,
     required this.routes,
     required this.designSize,
@@ -30,10 +30,10 @@ class MaterialClavisApp extends StatefulWidget {
   });
 
   @override
-  State<MaterialClavisApp> createState() => _MaterialClavisAppState();
+  State<MaterialforesApp> createState() => _MaterialforesAppState();
 }
 
-class _MaterialClavisAppState extends State<MaterialClavisApp> {
+class _MaterialforesAppState extends State<MaterialforesApp> {
   Map<String, Widget> defaultRoutes = {"@ROOT@": Root(), "/": Home()};
   late final AppRouter appRouter;
   late final CBloc navigationBloc;

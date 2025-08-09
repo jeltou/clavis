@@ -1,5 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:clavis/blocs/notification/notification_nuntius.dart';
+import 'package:fores/blocs/notification/notification_nuntius.dart';
 import 'package:meta/meta.dart';
 
 import '../../cbloc/cbloc.dart';

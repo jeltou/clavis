@@ -2,8 +2,8 @@ library;
 
 import 'dart:async';
 import 'dart:math';
-import 'package:clavis/conexus/conexus.dart';
-import 'package:clavis/config/config.dart';
+import 'package:fores/conexus/conexus.dart';
+import 'package:fores/config/config.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:meta/meta.dart';
 
