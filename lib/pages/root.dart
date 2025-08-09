@@ -25,7 +25,6 @@ class _RootState extends State<Root> {
       dismissDirection: DismissDirection.none,
       behavior: SnackBarBehavior.floating,
       content: content,
-      margin: EdgeInsets.only(bottom: MediaQuery.of(context).size.height - 150.h, left: 10.w, right: 10.w),
     );
     ScaffoldMessenger.of(context).clearSnackBars();
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
