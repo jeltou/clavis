@@ -11,3 +11,4 @@ export 'blocs/navigation/navigation_nuntius.dart';
 export 'blocs/session/session_bloc.dart';
 export 'package:flutter_bloc/flutter_bloc.dart';
 export 'package:meta/meta.dart';
+export 'package:flutter_screenutil/flutter_screenutil.dart';
